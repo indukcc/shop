@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'iducs.jspservlet'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.6.2'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compileOnly('javax:javaee-web-api:8.0.1')
+    runtimeOnly('javax.servlet:jstl:1.2')
+    runtimeOnly('com.oracle.database.jdbc:ojdbc6:11.2.0.4')
+    implementation('org.apache.poi:poi-ooxml:4.1.2')
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}
