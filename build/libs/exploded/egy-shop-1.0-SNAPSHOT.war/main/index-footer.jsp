@@ -44,9 +44,9 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="../../ch06/vendor/jquery/jquery.min.js"></script>
-<script src="../../ch06/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="../../ch06/js/clean-blog.min.js"></script>
+<script src="../js/clean-blog.min.js"></script>
 
