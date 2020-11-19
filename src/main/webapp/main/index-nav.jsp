@@ -32,17 +32,17 @@
                     <a class="nav-link" href="../main/about.jsp">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../main/post.jsp">Sample Post</a>
+                    <a class="nav-link" href="../member/register-form.jsp">Sample Post</a>
                 </li>
 <c:choose>
     <c:when test="${sessionScope.login == null}">
                 <li class="nav-item">
-                    <a class="nav-link" href="../member/signin-form">Sign In</a>
+                    <a class="nav-link" href="../member/signin-form.jsp">Sign In</a>
                 </li>
     </c:when>
     <c:otherwise>
                 <li class="nav-item">
-                    <a class="nav-link" href="../member/signout">Sign Out</a>
+                    <a class="nav-link" href="../member/signout.do">Sign Out</a>
                 </li>
 
     </c:otherwise>
@@ -51,3 +51,4 @@
         </div>
     </div>
 </nav>
+

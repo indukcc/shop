@@ -45,7 +45,7 @@
     Cookie[] cookies = request.getCookies();
     if(cookies != null){
         for(Cookie tempCookie : cookies){
-            if(tempCookie.getName().equals("id")){
+            if(tempCookie.getName().equals("email")){
                 request.setAttribute("cookie_id", tempCookie.getValue());
             }
         }
@@ -62,8 +62,8 @@
     <c:when test="${cookie == null}">
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <label>ID</label>
-                        <input type="text" class="form-control" placeholder="ID" name="id" required data-validation-required-message="Please enter your id.">
+                        <label>Email</label>
+                        <input type="text" class="form-control" placeholder="Email" name="email" required data-validation-required-message="Please enter your id.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
                         <label>ID</label>
-                        <input type="text" class="form-control" placeholder="ID" name="id" value="${cookie_id}" required data-validation-required-message="Please enter your id.">
+                        <input type="text" class="form-control" placeholder="Email" name="email" value="${cookie_id}" required data-validation-required-message="Please enter your id.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>

@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>signin</servlet-name>
+        <servlet-name>signin-form</servlet-name>
         <jsp-file>/member/signin-form.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>signin</servlet-name>
+        <servlet-name>signin-form</servlet-name>
         <url-pattern>/member/signin-form.jsp</url-pattern>
     </servlet-mapping>
 </web-app>
